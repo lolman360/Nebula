@@ -113,6 +113,10 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/constructionsite)
+"oy" = (
+/obj/level_data/main_level,
+/turf/space,
+/area/space)
 "oZ" = (
 /obj/structure/cable,
 /obj/machinery/power/debug_items/infinite_generator,
@@ -319,7 +323,6 @@
 /area/constructionsite)
 "Pw" = (
 /obj/structure/cable{
-	d2 = 2;
 	icon_state = "0-2"
 	},
 /obj/machinery/power/apc{
@@ -417,8 +420,6 @@
 /area/constructionsite)
 "ZF" = (
 /obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
 	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/orange{
@@ -598,7 +599,7 @@ Hk
 Hk
 Hk
 Hk
-Hk
+oy
 Hk
 Hk
 Hk
