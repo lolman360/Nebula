@@ -3,7 +3,8 @@
 	category = /decl/background_category/homeworld
 	var/distance_heading = "Distance from Sol"
 	var/distance = 0
-	var/ruling_body = "Other Faction"
+	var/ruling_body //e.g "Various Governments"
+	var/territory = "Other Faction"
 	var/capital
 
 	// Used by the random news generator. Populate with subtypes of /decl/location_event.
@@ -15,7 +16,9 @@
 	if(!isnull(capital))
 		. += "<b>Capital:</b> [capital]."
 	if(!isnull(ruling_body))
-		. += "<b>Territory:</b> [ruling_body]."
+		. += "<b>Ruling Body:</b> [ruling_body]."
+	if(!isnull(territory))
+		. += "<b>Territory:</b> [territory]."
 	if(!isnull(distance) && !isnull(distance_heading))
 		. += "<b>[distance_heading]:</b> [distance]."
 	. += ..()
